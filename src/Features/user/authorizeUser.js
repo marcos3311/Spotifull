@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import useVerifier from '../../Components/Login/Hooks/useVerifier';
+import useVerifier from '../../Pages/Login/Hooks/useVerifier';
 
 export const authorizeUser = createAsyncThunk(
     'user/authorizeUser',

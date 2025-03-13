@@ -4,12 +4,12 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router';
 import store from './store';
-import App from './Components/App/App';
-import Login from './Components/Login/Login';
-import Home from './Components/Home/Home';
-import Profile from './Components/Profile/Profile';
-import Playlists from './Components/Playlists/Playlists';
-import Search from './Components/Search/Search';
+import App from './Pages/App/App';
+import Login from './Pages/Login/Login';
+import Home from './Pages/Home/Home';
+import Profile from './Pages/Profile/Profile';
+import Playlists from './Pages/Playlists/Playlists';
+import Search from './Pages/Search/Search';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
