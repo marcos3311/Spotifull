@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+}
+
+.trackImage {
+    height: 100px;
+}
+
+.trackText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.trackName {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.trackArtist {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.trackAlbum {
+    font-size: 1rem;
+    opacity: .8;
+}

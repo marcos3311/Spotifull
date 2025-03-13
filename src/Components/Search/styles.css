@@ -1,0 +1,30 @@
+.input-container {
+    display: flex;
+    height: fit-content;
+    justify-self: center;
+    align-self: self-end;
+    padding: 50px 0;
+}
+
+.input-container input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 0;
+    padding: 0 10px;
+}
+
+.input-container button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #000;
+    background-color: #1ed760;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.input-container button:active {
+    background-color: #1cc958;
+}
