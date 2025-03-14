@@ -2,8 +2,8 @@ import './styles.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchName } from '../../Features/trackResults/fetchName';
 import { selectToken } from '../../Features/user/userSlice';
-import { Input } from '../Components/Input';
-import Tracks from '../Components/Tracks';
+import { Input } from '../Components/Input/Input';
+import Tracks from '../Components/Tracks/Tracks';
 import { selectValue, updateValue } from '../../Features/trackResults/trackResultsSlice';
 
 export default function Search() {

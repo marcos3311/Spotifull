@@ -1,14 +1,12 @@
+import { useSelector } from "react-redux";
+import { selectUserPlaylists } from "../../../Features/playlists/playlistsSlice";
+import { Playlists } from "../../Components/Playlists/Playlists";
 
 export default function Aside() {
+    const items = useSelector(selectUserPlaylists);
     return(
     <aside>
-        <ul>
-            <li>N1</li>
-            <li>N2</li>
-            <li>N3</li>
-            <li>N4</li>
-            <li>N5</li>
-        </ul>
+        <Playlists playlists={items} />
     </aside>
 )
 }

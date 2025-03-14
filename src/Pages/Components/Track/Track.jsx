@@ -2,7 +2,7 @@ import styles from './Track.module.css'
 
 export default function Track({ track }) {
     return (
-        <div className={styles.container}>
+        <div className={styles.trackContainer}>
             <img src={track.album.images[0].url} alt={track.album.name} className={styles.trackImage} />
             <div className={styles.trackText}>
                 <p className={styles.trackName}>{track.name}</p>

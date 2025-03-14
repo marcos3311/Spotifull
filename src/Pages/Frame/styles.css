@@ -82,6 +82,16 @@ ul li {
     justify-content: center;
 }
 
+.profile-text a {
+    color: #67cfff;
+    text-decoration: none;
+}
+
+.profile-text p {
+    color: gold;
+    text-decoration: none;
+}
+
 .nav {
     width: 100%;
     display: flex;

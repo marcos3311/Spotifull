@@ -1,4 +1,4 @@
-.container {
+.tracksContainer {
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(4, 1fr);
     gap: 1rem;

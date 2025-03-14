@@ -8,6 +8,7 @@ import { selectId } from "../../Features/user/userSlice";
 import Aside from "./Components/Aside";
 import Header from "./Components/Header";
 import './styles.css'
+import { fetchPlaylists } from "../../Features/playlists/playlistsSlice";
 
 export default function Frame() {
     const dispatch = useDispatch();
@@ -22,6 +23,8 @@ export default function Frame() {
         window.history.replaceState({}, document.title, window.location.pathname);
         // DISPATCH action to FETCH USER DATA
         dispatch(getData(token))
+        // DISPATCH action to FETCH USER PLAYLISTS
+        dispatch(fetchPlaylists({token, id}))  
       }
     }, [id, token, isAuth, dispatch]);
     return (

@@ -7,8 +7,9 @@ export const getData = createAsyncThunk (
             method: "GET", headers: { Authorization: `Bearer ${token}` }
         });
         const data = await response.json();
-        const { id, display_name, product, images} = data;
-        return { id, display_name, product, images };
+        console.log(data)
+        const { id, display_name, product, images, external_urls} = data;
+        return { id, display_name, product, images, external_urls };
         // Later check more properties;
     }
 );

@@ -17,6 +17,7 @@ const initialState = {
     name: 'Guest',
     description: 'No description available.',
     img: '/Assets/Images/profile-default.png',
+    url: '#',
     isLoadingUserData: false,
     errorUserData: false,
     isLoadingAuthorize: false,
@@ -83,6 +84,7 @@ const userSlice = createSlice({
                     state.name = action.payload.display_name;
                     state.description = action.payload.product;
                     state.img = action.payload.images[0].url;
+                    state.url = action.payload.external_urls.spotify;
                     state.isLoadingUserData = false;
                     state.errorUserData = false;
             })
@@ -130,4 +132,5 @@ export const selectName = (state) => state.user.name;
 export const selectDescription = (state) => state.user.description;
 export const selectImg = (state) => state.user.img;
 export const selectId = (state) => state.user.id;
+export const selectUrl = (state) => state.user.url;
 export const { authFromLocalStorage } = userSlice.actions;
